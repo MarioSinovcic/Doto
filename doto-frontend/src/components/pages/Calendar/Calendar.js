@@ -88,7 +88,7 @@ const Calendar = () => {
                 </header>
                 <div className="flex justify-end">
                     <div className="ml-3">
-                        <Fab onClick={() => handleOpen} size="small">
+                        <Fab onClick={handleOpen} size="small">
                             <AddIcon />
                         </Fab>
                     </div>
@@ -119,7 +119,7 @@ const Calendar = () => {
                 >
                     <Fade in={open}>
                         <div className={classes.paper}>
-                            <ModalConent />
+                            <ModalConent closeModal={handleClose} />
                         </div>
                     </Fade>
                 </Modal>
